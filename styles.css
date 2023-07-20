@@ -142,7 +142,7 @@ line-height: normal;
 margin-top: 70px;
 margin-bottom: 20px;
 }
-.online-game-tit-style{
+.game-tit-style{
     background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
 background-clip: text;
 -webkit-background-clip: text;
@@ -172,31 +172,133 @@ line-height: normal;
     background-color: wheat;
     width: fit-content;
 }
+.install-cantainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 200px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.play-cont{
+    text-align: center;
+    
+}
+.install-img{
+    position: relative;  
+    top: 0;
+    right: 0;
+}
+.install-img .img-1{
+width:500px;
+position: relative;
+top: 0;
+right: 0;
+}
+.install-img .img-2{
+   position: absolute;
+   top: 350px;
+   right: 350px;
+   width: 250px;
+   z-index: 1;
+}
+.game-name{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    padding: 180px 250px;
+}
+.game-des{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.game-des h5{
+    margin-left: 20px;
+}
+.game-des:hover {
+    border: 1px solid rgb(243, 231, 213);
+    cursor: pointer;
+    color: #8758F1;
+    background-color: rgb(201, 212, 223);
+}
+.footer-container{
+    background-color: black;
+    /* width: 100%; */
+    height: auto;
+    color:  white;
+    padding: 30px 150px;
+    /* text-align: center; */
+}
+.foot-tit{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+  margin-bottom: 20px;
+} 
+.foot-con-details{
+    display: flex;
+    justify-content: center;
+}
+.about-us{
+    margin-left: 25px;
+    font-size:.8rem;
+}
+.social-link{
+    display: flex;
+    justify-content: center;
+}
+.social-icon{
+    background-color: white;
+    background-size: cover;
+    margin: 30px;
+    border-radius: 30%;
+    width: 30px;
 
-
-
+}
+.settings{
+    display: flex;
+    justify-content: center;
+}
+.foot-end{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    color:#534C64;
+}
 /* media device  */
  @media screen and (max-width: 576px) {
     .navbar,
     ul,
-    .banner{
+    .banner,
+    .install-cantainer{
         flex-direction: column;
     }
     .cards{
         grid-template-columns: repeat(1,1fr);  
         gap: 5px;
+        padding: 1rem;
+    }
+    .game-name{
+        grid-template-columns: repeat(2,1fr);    
+        padding: 100px 30px;
     }
     ul,li {
         margin-top: 15px;
     }
  
-.banner-img img{
+.banner-img img,.install-img .img-1{
+    
     width: 300px;
 }
 .banner{
    width: fit-content;
 }
-.banner-des,.navbar{
+.install-cantainer .img-2{
+    width: 150px;
+top: 150px;
+left: 20px;
+}
+.banner-des,.navbar,.install-cantainer{
     padding: 10px;
     text-align: center;
 }
@@ -205,4 +307,49 @@ line-height: normal;
 width:50%;
 margin: 0 auto;
 }
- 
+.footer-container{
+    padding: 20px;
+}
+.settings{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+}
+.foot-con-details{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+}
+
+/*  medium one */
+
+@media screen  and (max-width : 1100px) and ( min-width:576px){
+    
+    .navbar,
+    ul,
+    .banner,
+    .install-cantainer{
+        flex-direction: column;
+    }
+    .game-name{
+        grid-template-columns: repeat(3,1fr);  
+        pad: 100px 30px;  
+    }
+    .cards{
+        grid-template-columns: repeat(2,1fr);  
+        gap: 5px;
+        padding: 1rem;
+    }
+    .install-cantainer .img-2{
+        width: 150px;
+   bottom:40px;
+    left:200px;
+    }
+    .banner-des,.navbar,.install-cantainer{
+        padding: 10px;
+        text-align: center;
+    }
+    .footer-container{
+        width: 100%;
+        padding: 20px;
+    }
+  
+    }
