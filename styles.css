@@ -159,6 +159,11 @@ line-height: normal;
     flex-wrap: wrap;
 
 }
+.play-but-hover:hover{
+cursor: pointer;
+image-resolution:initial;
+
+}
 
 .icon-play{
     position: relative;
@@ -166,7 +171,8 @@ line-height: normal;
     right: -130px;
 }
 .icon-play img{
-    background-color:white
+    background-color:white;
+    border-radius: 30px;
 }
 .icon-play p{
     background-color: wheat;
@@ -220,14 +226,16 @@ right: 0;
     cursor: pointer;
     color: #8758F1;
     background-color: rgb(201, 212, 223);
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .footer-container{
     background-color: black;
-    /* width: 100%; */
     height: auto;
     color:  white;
     padding: 30px 150px;
-    /* text-align: center; */
+   
 }
 .foot-tit{
     display: flex;
@@ -317,7 +325,7 @@ margin: 0 auto;
 .foot-con-details{
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
-}
+}}
 
 /*  medium one */
 
